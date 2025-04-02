@@ -67,9 +67,9 @@ oci iam policy create \
         'Allow group appl-users to manage load-balancers in compartment cmp-prd:cmp-network',
         'Allow group appl-users to manage load-balancers in compartment cmp-hml:cmp-network',
         'Allow group appl-users to manage load-balancers in compartment cmp-dev:cmp-network',
-        'Allow group appl-users to manage functions-family in compartment cmp-prd:cmp-network',
-        'Allow group appl-users to manage functions-family in compartment cmp-hml:cmp-network',
-        'Allow group appl-users to manage functions-family in compartment cmp-dev:cmp-network',
+        'Allow group appl-users to manage functions-family in compartment cmp-prd:cmp-appl',
+        'Allow group appl-users to manage functions-family in compartment cmp-hml:cmp-appl',
+        'Allow group appl-users to manage functions-family in compartment cmp-dev:cmp-appl',
         'Allow group appl-users to inspect virtual-network-family in compartment cmp-prd:cmp-network',
         'Allow group appl-users to inspect virtual-network-family in compartment cmp-hml:cmp-network',
         'Allow group appl-users to inspect virtual-network-family in compartment cmp-dev:cmp-network']" \
@@ -80,9 +80,9 @@ oci iam policy create \
     --name "dba-users-policy" \
     --description "Políticas de Acesso para o Grupo dba-users." \
     --statements "[
-        'Allow group dba-users to manage nosql-family in compartment cmp-prd:cmp-appl',
-        'Allow group dba-users to manage nosql-family in compartment cmp-hml:cmp-appl',
-        'Allow group dba-users to manage nosql-family in compartment cmp-dev:cmp-appl']" \
+        'Allow group dba-users to manage nosql-family in compartment cmp-prd:cmp-database',
+        'Allow group dba-users to manage nosql-family in compartment cmp-hml:cmp-database',
+        'Allow group dba-users to manage nosql-family in compartment cmp-dev:cmp-database']" \
     --wait-for-state ACTIVE
 
 exit 0
