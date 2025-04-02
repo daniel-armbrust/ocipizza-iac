@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# scripts/chapter-2/compartments.sh
+# scripts/chapter-2/compartment.sh
 #
 # Copyright (C) 2005-2024 by Daniel Armbrust <darmbrust@gmail.com>
 #

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# scripts/chapter-2/groups.sh
+# scripts/chapter-2/group.sh
 #
 # Copyright (C) 2005-2024 by Daniel Armbrust <darmbrust@gmail.com>
 #
@@ -20,17 +20,17 @@
 #
 
 oci iam group create \
-    --name "group-network" \
+    --name "network-users" \
     --description "Grupo de usuários que pertencem à equipe de Redes." \
     --wait-for-state "ACTIVE"
 
 oci iam group create \
-    --name "group-appl" \
+    --name "appl-users" \
     --description "Grupo de usuários que pertencem à equipe de Aplicação." \
     --wait-for-state "ACTIVE"
 
 oci iam group create \
-    --name "group-dba" \
+    --name "dba-users" \
     --description "Grupo de usuários que pertencem à equipe DBA." \
     --wait-for-state "ACTIVE"
 
