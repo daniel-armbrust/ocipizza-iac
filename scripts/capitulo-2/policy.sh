@@ -45,7 +45,7 @@ oci iam policy create \
         'Allow group network-users to manage waas-family in compartment cmp-prd:cmp-network',
         'Allow group network-users to manage waas-family in compartment cmp-hml:cmp-network',
         'Allow group network-users to manage waas-family in compartment cmp-dev:cmp-network']" \
-    --wait-for-state ACTIVE
+    --wait-for-state "ACTIVE"
 
 oci iam policy create \
     --compartment-id "$tenancy_ocid" \
@@ -73,7 +73,7 @@ oci iam policy create \
         'Allow group appl-users to inspect virtual-network-family in compartment cmp-prd:cmp-network',
         'Allow group appl-users to inspect virtual-network-family in compartment cmp-hml:cmp-network',
         'Allow group appl-users to inspect virtual-network-family in compartment cmp-dev:cmp-network']" \
-    --wait-for-state ACTIVE
+    --wait-for-state "ACTIVE"
 
 oci iam policy create \
     --compartment-id "$tenancy_ocid" \
@@ -83,6 +83,6 @@ oci iam policy create \
         'Allow group dba-users to manage nosql-family in compartment cmp-prd:cmp-database',
         'Allow group dba-users to manage nosql-family in compartment cmp-hml:cmp-database',
         'Allow group dba-users to manage nosql-family in compartment cmp-dev:cmp-database']" \
-    --wait-for-state ACTIVE
+    --wait-for-state "ACTIVE"
 
 exit 0
